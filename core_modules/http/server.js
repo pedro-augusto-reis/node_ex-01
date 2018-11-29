@@ -40,6 +40,10 @@ app.get('/contatos/:id', function(req, res) {
   res.status(404).end();
 });
 
+app.get('/serviceCheck',function(req,res){
+  res.end();
+});
+
 app.post('/contatos', function(req, res) {
   contatos.push(req.body);
   res.json(true);
